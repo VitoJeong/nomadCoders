@@ -1,7 +1,23 @@
 const title = document.querySelector('#title');
 
-function handleClick() {
-    title.style.color = 'red';
+const CLICKED_CLASS = 'clicked';
+
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS);
 }
 
-title.addEventListener('click', handleClick);
+function init(){
+    title.addEventListener('click', handleClick);
+}
+
+
+init();
+
+
+function handleOffline(){
+    console.log('lallaa');
+}
+function handleOnline(){
+    console.log('Welcome!');
+}
+window.addEventListener('online', handleOnline);
