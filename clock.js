@@ -13,7 +13,8 @@ function getTime(){
 
 function init(){
     getTime();
-    setInterval(getTime, 1000);
+    /* setInterval(getTime(), 1000); 딱 한번만 실행됨 */ 
+    setInterval(getTime,1000); /* 반복적으로 실행됨 */
 }
 
 init();
