@@ -29,6 +29,8 @@ function paintGreeting(text){
 
 function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
+    // JavaScript의 == 연산은 값만 비교
+    //  === 연산은 값과 자료형 모두 비교
     if(currentUser === null){
        askForName();
     } else {
