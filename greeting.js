@@ -6,6 +6,15 @@ const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
 function saveName(text){
+    // 데이터를 사용자 로컬저장소에 저장
+    /*
+    LocalStorage 특징
+    ・키(key)와 값(value)을 하나의 세트로 저장.
+
+    ・도메인과 브라우저별로 저장.
+
+    ・값은 반드시 문자열로 저장됨. 
+    */
     localStorage.setItem(USER_LS, text);
 }
 
